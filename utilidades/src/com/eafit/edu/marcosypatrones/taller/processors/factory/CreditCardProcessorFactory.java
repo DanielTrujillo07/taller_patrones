@@ -7,6 +7,7 @@ import com.eafit.edu.marcosypatrones.taller.processors.iterfaces.ICreditCardProc
  * Clase Factory encargada de crear la clase concreta de process
  * @author Daniel danieltrujillo07@gmail.com
  */
+@Deprecated
 public class CreditCardProcessorFactory {
 
 	/** Instancia unica del processor */

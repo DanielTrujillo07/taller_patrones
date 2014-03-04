@@ -7,6 +7,7 @@ import com.eafit.edu.marcosypatrones.taller.logs.iterfaces.ITransactionLog;
  * Factory para la creacion de la clase concreta encargada de manejar los logs de la transaccion
  * @author Daniel danieltrujillo07@gmail.com
  */
+@Deprecated
 public class TransactionLogFactory {
 	
 	/** Instancia unica del TransaccionLog */

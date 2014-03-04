@@ -3,7 +3,19 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0.zip"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/aopalliance.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-assistedinject-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-grapher-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-jmx-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-jndi-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-multibindings-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-persist-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-servlet-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-spring-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-struts2-plugin-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/guice-throwingproviders-4.0-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/00PROGRAMAS/00-FRAMEWORK/guice-4.0/javax.inject.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

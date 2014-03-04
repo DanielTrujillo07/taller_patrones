@@ -1,5 +1,7 @@
 package com.eafit.edu.marcosypatrones.taller.ejb.test;
 
+import junit.framework.TestCase;
+
 import org.junit.Test;
 
 import com.eafit.edu.marcosypatrones.taller.ejb.BillingService;
@@ -7,18 +9,13 @@ import com.eafit.edu.marcosypatrones.taller.entidades.CreditCard;
 import com.eafit.edu.marcosypatrones.taller.entidades.PizzaOrder;
 import com.eafit.edu.marcosypatrones.taller.entidades.Receipt;
 import com.eafit.edu.marcosypatrones.taller.logs.concretas.InMemoryTransactionLog;
-import com.eafit.edu.marcosypatrones.taller.logs.factory.TransactionLogFactory;
 import com.eafit.edu.marcosypatrones.taller.processors.concretas.FakeCreditCardProcessor;
-import com.eafit.edu.marcosypatrones.taller.processors.factory.CreditCardProcessorFactory;
-
-import junit.framework.TestCase;
 
 /**
  * Clase encargada de ejecutar una pruebas unitarias sobre <code>BillingService<code>
  * @author Daniel danieltrujillo07@gmail.com
  */
-@SuppressWarnings("deprecation")
-public class RealBillingServiceTest extends TestCase {
+public class RealBillingServiceTest2 extends TestCase {
 	
 	/** Atributo para representar la orden*/
 	private final PizzaOrder order = new PizzaOrder(100);
@@ -29,19 +26,6 @@ public class RealBillingServiceTest extends TestCase {
 	/** Clase concreta para ejecutar el cobro de la orden a la tarjeta de credito */
 	private final FakeCreditCardProcessor creditCardProcessor = new FakeCreditCardProcessor();
 
-	/** metodo encargado de establecer los objetos necesarios para realizar la prueba */
-	@SuppressWarnings("deprecation")
-	public void setUp() {
-		TransactionLogFactory.setInstance(transactionLog);
-		CreditCardProcessorFactory.setInstance(creditCardProcessor);
-	}
-
-	/** metodo encargado de limpiar las utilidades usadas */
-	@SuppressWarnings("deprecation")
-	public void tearDown() {
-		TransactionLogFactory.setInstance(null);
-		CreditCardProcessorFactory.setInstance(null);
-	}
 
 	/** Metodo encargado de ejecutar la logica de cobro*/
 	@Test
