@@ -7,6 +7,9 @@ import com.eafit.edu.marcosypatrones.taller.processors.dto.ChargeResultDTO;
 /**
  * Clase concreta2 que extiende de ITransactionLog
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class InMemoryTransactionLog extends ITransactionLog{
 	

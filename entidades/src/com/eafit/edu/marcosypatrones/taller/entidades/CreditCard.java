@@ -3,6 +3,9 @@ package com.eafit.edu.marcosypatrones.taller.entidades;
 /**
  * Clase que representa una tarjeta de credito
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class CreditCard {
 	
@@ -12,6 +15,10 @@ public class CreditCard {
 	private Integer mes = null;
 	/** atributo para indicar el anio de vencimiento que aparece en la tarjeta */
 	private Integer anio = null;
+	/** Atributo para identificar codigo de seguridad */
+	private Integer nroSeguridad = null;
+	/** Atributo para identificar el pass de la tarjeta */
+	private String passTarjeta = null;
 	
 	/** Constructor por defecto */
 	public CreditCard() {
@@ -74,5 +81,37 @@ public class CreditCard {
 	 */
 	public void setAnio(Integer anio) {
 		this.anio = anio;
+	}
+
+	/**
+	 * Método encargado de retornar el valor del atributo nroSeguridad 
+	 * @return tretorna el valor de nroSeguridad
+	 */
+	public Integer getNroSeguridad() {
+		return nroSeguridad;
+	}
+
+	/**
+	 * Método encargado de establecer el parametro de nroSeguridad
+	 * @param nroSeguridad informacion a establecer
+	 */
+	public void setNroSeguridad(Integer nroSeguridad) {
+		this.nroSeguridad = nroSeguridad;
+	}
+
+	/**
+	 * Método encargado de retornar el valor del atributo passTarjeta 
+	 * @return tretorna el valor de passTarjeta
+	 */
+	public String getPassTarjeta() {
+		return passTarjeta;
+	}
+
+	/**
+	 * Método encargado de establecer el parametro de passTarjeta
+	 * @param passTarjeta informacion a establecer
+	 */
+	public void setPassTarjeta(String passTarjeta) {
+		this.passTarjeta = passTarjeta;
 	}
 }

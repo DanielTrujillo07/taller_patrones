@@ -13,6 +13,9 @@ import com.google.inject.Inject;
 /**
  * Clase concreta que implementa los metodos de la interface <code>IBillingService<code>
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class BillingService implements IBillingService {
 	
@@ -32,6 +35,7 @@ public class BillingService implements IBillingService {
 		this.processor = processor;
 		this.transactionLog = transactionLog;
 	}
+
 	
 	/**
 	 * Servicio encargado de cobrar la oden a la tarjeta de credito ambos ingresados como parametros,
@@ -53,25 +57,13 @@ public class BillingService implements IBillingService {
 			return Receipt.forSystemFailure(e.getMessage());
 		}
 	}
-	
+
+	/**
+	 * Método encargado de retornar el valor del atributo processor 
+	 * @return tretorna el valor de processor
+	 */
+	public ICreditCardProcessor getProcessor() {
+		return processor;
+	}
 
 }
-// Codigo origina
-//public class RealBillingService implements BillingService {
-//	public Receipt chargeOrder(PizzaOrder order, CreditCard creditCard) {
-//		CreditCardProcessor processor = new PaypalCreditCardProcessor();
-//		TransactionLog transactionLog = new DatabaseTransactionLog();
-//
-//		try {
-//			ChargeResult result = processor.charge(creditCard, order.getAmount());
-//			transactionLog.logChargeResult(result);
-//
-//			return result.wasSuccessful()
-//					? Receipt.forSuccessfulCharge(order.getAmount())
-//							: Receipt.forDeclinedCharge(result.getDeclineMessage());
-//		} catch (UnreachableException e) {
-//			transactionLog.logConnectException(e);
-//			return Receipt.forSystemFailure(e.getMessage());
-//		}
-//	}
-//}

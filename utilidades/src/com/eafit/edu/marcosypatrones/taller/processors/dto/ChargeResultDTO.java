@@ -3,6 +3,9 @@ package com.eafit.edu.marcosypatrones.taller.processors.dto;
 /**
  * Clase encargada de transportar la informacion del resultado del proceso de cobro del pedido
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class ChargeResultDTO {
 	

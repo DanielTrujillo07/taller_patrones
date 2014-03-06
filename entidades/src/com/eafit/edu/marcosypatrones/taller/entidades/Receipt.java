@@ -5,6 +5,9 @@ import java.math.BigDecimal;
 /**
  * Clase que representa el recivido de un cobro de un pedido
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class Receipt {
 	

@@ -8,6 +8,9 @@ import com.eafit.edu.marcosypatrones.taller.processors.dto.ChargeResultDTO;
 /**
  * Interface con las firmas de los servicios que debe tener las clases que hereden de CreditCardProcesor
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public abstract class ICreditCardProcessor {
 	

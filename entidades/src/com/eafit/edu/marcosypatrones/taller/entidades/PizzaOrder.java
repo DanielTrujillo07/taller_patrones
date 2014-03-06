@@ -5,6 +5,9 @@ import java.math.BigDecimal;
 /**
  * Clase encargada de representar una orden de piza
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class PizzaOrder {
 	

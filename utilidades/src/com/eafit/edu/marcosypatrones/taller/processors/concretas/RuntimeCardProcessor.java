@@ -5,14 +5,14 @@ import com.eafit.edu.marcosypatrones.taller.processors.dto.ChargeResultDTO;
 import com.eafit.edu.marcosypatrones.taller.processors.iterfaces.ICreditCardProcessor;
 
 /**
- * Clase concreta2 que extiende de ICreditCardProcessor
+ * Clase concreta1 que extiende de ICreditCardProcessor
  * @author Daniel danieltrujillo07@gmail.com
  * @author Juan Carlos Arbelaez
  * @author Hernan Dario Rincon
  * @author Alejandro Merchan
  */
-public class FakeCreditCardProcessor extends ICreditCardProcessor{
-	
+public class RuntimeCardProcessor extends ICreditCardProcessor{
+
 	/**
 	 * Servicio encargado de realizar un cobro sobre una tarjeta 
 	 * @param creditCard tarjeta de credito sobre la cual se va a realizar el cobro
@@ -22,13 +22,10 @@ public class FakeCreditCardProcessor extends ICreditCardProcessor{
 	 */
 	public ChargeResultDTO charge(CreditCard creditCard,  Integer amount) {
 		ChargeResultDTO result = new ChargeResultDTO();
-		if(amount != null) {
-			result.setSuccessful(Boolean.TRUE);
-			// se establece la informacion de la tarjeta
-			super.setCreditCardLocal(creditCard);
-			super.setAmountLocal(amount);
-		}
+		result.setSuccessful(Boolean.TRUE);
+		// se establece la informacion de la tarjeta
+		super.setCreditCardLocal(creditCard);
+		super.setAmountLocal(amount);
 		return result;
 	}
-
 }

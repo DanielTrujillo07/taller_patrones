@@ -7,6 +7,9 @@ import com.eafit.edu.marcosypatrones.taller.processors.iterfaces.ICreditCardProc
 /**
  * Clase concreta1 que extiende de ICreditCardProcessor
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public class PaypalCreditCardProcessor extends ICreditCardProcessor{
 
@@ -20,8 +23,13 @@ public class PaypalCreditCardProcessor extends ICreditCardProcessor{
 	public ChargeResultDTO charge(CreditCard creditCard,  Integer amount) {
 		ChargeResultDTO result = new ChargeResultDTO();
 		if(creditCard != null && amount != null) {
-			result.setSuccessful(Boolean.TRUE);
-			
+			// se verifica que se ingresara la informacion de la tarjeta
+			if(creditCard.getNombre() != null && !creditCard.getNombre().trim().isEmpty() && 
+					creditCard.getMes() != null && creditCard.getAnio() != null) {
+				result.setSuccessful(Boolean.TRUE);
+			}else {
+				result.setDeclineMessage("No ingreso informacion de la tarjeta. ");
+			}
 			// se establece la informacion de la tarjeta
 			super.setCreditCardLocal(creditCard);
 			super.setAmountLocal(amount);

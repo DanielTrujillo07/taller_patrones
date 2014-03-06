@@ -6,6 +6,9 @@ import com.eafit.edu.marcosypatrones.taller.processors.dto.ChargeResultDTO;
 /**
  * Interface con las firmas de los metodos que se deben implementar para el manejo de logs
  * @author Daniel danieltrujillo07@gmail.com
+ * @author Juan Carlos Arbelaez
+ * @author Hernan Dario Rincon
+ * @author Alejandro Merchan
  */
 public abstract class ITransactionLog {
 	
